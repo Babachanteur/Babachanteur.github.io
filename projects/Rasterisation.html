@@ -78,21 +78,100 @@
     <div class="container text-bg-secondary bg-opacity-50">
       <h1 class="display-1 text-center">Rasterisation</h1>
       <p class="lead">
-        During my 3D algorithmics classes, I was asked to create a software running on java, to do Ray Tracing. There were only one rule, I needed to export the images
-        in a weird format to not copy from other website. They gave me one class to export the images and one that manages float 3 dimensin vectors
-        and I did the rest. Here are some examples of what my sofware was able to do. I made some bonus such as print the image in a window, made the 
-        Ray Tracing in parallel to generate images faster or change the float to double to have more precision. Unfortunatly, I didn't succed in making
-        refraction, so you'll only see reflection. 
-        <br/>
-        <a class="btn btn-primary" href="/downloads/Algorithme3D.apk" download>Download APK</a>
+        During my 3D algorithmics classes, we had to build a software to understand better rasterisation. This software had to have multiple
+        features asked by our professor, and I'm going to show them through little card below. 
       </p>
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner text-center">
-          <div class="carousel-item active" data-bs-interval="3000">
-            <img src="../images/RayTracing/Exemple_1.png" class="img-fluid" alt="First Example">
+
+      <div class="card mb-3 text-bg-secondary">
+        <div class="row g-0 align-items-center">
+          <div class="col-md-6">
+            <div class="card-body">
+              <h2 class="card-title">Base rendering and Commands</h2>
+              <p class="card-text">
+                First of all, we were asked to do a Gouraud shader, with some basic object such as planes and cubes. In addition to that, your application
+                shoul allow the user to move through the scene, to rotate the camera and I had a last control to reset the view and position of the user.
+                So, to move, use the left part of the screen. To rotate the camera, use the right part of the screen. 
+                And to reset yourself, put three finger on the screen.
+              </p>
+            </div>
           </div>
-          <div class="carousel-item" data-bs-interval="3000">
-            <img src="../images/RayTracing/Exemple_2.png" class="img-fluid" alt="Second Example">
+          <div class="col-md-6">
+            <img src="../images/Rasterisation/Gouraud.jpg" class="img-fluid rounded" alt="Main Image">
+          </div>
+        </div>
+      </div>
+      
+      <div class="card mb-3 text-bg-secondary">
+        <div class="row g-0 align-items-center">
+          <div class="col-md-6 text-center">
+              <img src="../images/Rasterisation/Spheres.jpg" class="img-fluid rounded" alt="Logo of LD">
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <h2 class="card-title">Parametric and ico spheres</h2>
+              <p class="card-text">
+                Then we made more complex object, such as sphere. And we see two version of them, one made with a parametric equation.
+                This technique is often reference as the parametric sphere and you found it in numerous software because it let you
+                control much more easily the number of faces. The sceond one, less used, is the Ico-sphere. The goal is to start from
+                an octahedron, and subdivide the face in four and put the new points to the same distance of the center. It less used,
+                because even if it has better result from my point of view, you can't control the number of face. On the picture, the
+                left object is an Ico-sphere with 4 division, and on the right is a parametric sphere with phi = 40 and theta = 40.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3 text-bg-secondary">
+        <div class="row g-0 align-items-center">
+          <div class="col-md-6">
+            <div class="card-body">
+              <h2 class="card-title">Import objects and reflection</h2>
+              <p class="card-text">
+                This was one of the main features we had to make. The goal here was to import in our application an 3D object not generated
+                inside our application. We had only one restriction, we needed to use the <strong>.obj</strong> format. Then we made reflection,
+                to do so we simply put the ground a little bit translucid, and we render all the other object with the inverse modelMatrix.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img src="../images/Rasterisation/ObjectReflect.jpg" class="img-fluid rounded" alt="Main Image">
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3 text-bg-secondary">
+        <div class="row g-0 align-items-center">
+          <div class="col-md-6 text-center">
+              <img src="../images/Rasterisation/Shaders.jpg" class="img-fluid rounded" alt="Logo of LD">
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <h2 class="card-title">Shaders Updates</h2>
+              <p class="card-text">
+                After thoses points, we were asked to have better shaders. We had to make Lambert and Phong shaders and we had to
+                make a system to switch shaders in the project (A container for shaders).
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3 text-bg-secondary">
+        <div class="row g-0 align-items-center">
+          <div class="col-md-6">
+            <div class="card-body">
+              <h2 class="card-title">Textures</h2>
+              <p class="card-text">
+                Then the last upgrade we had to make is adding texture to the phong shader, still with the switching system. That's the
+                last update we were asked to do. If you want to test this project, here's a link to download the apk.
+                <br/>
+                <a class="btn btn-primary" href="./../downloads/Algorithme3D.apk">Download</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img src="../images/Rasterisation/Texture.jpg" class="img-fluid rounded" alt="Main Image">
           </div>
         </div>
       </div>
