@@ -113,13 +113,12 @@
             <div class="card-body">
               <h2 class="card-title">Sphère paramétrique et Icosphère</h2>
               <p class="card-text">
-                Ensute, nous avons fais des object plus compliqué, commes des sphères. 
-                Then we made more complex object, such as sphere. And we see two version of them, one made with a parametric equation.
-                This technique is often reference as the parametric sphere and you found it in numerous software because it let you
-                control much more easily the number of faces. The sceond one, less used, is the Ico-sphere. The goal is to start from
-                an octahedron, and subdivide the face in four and put the new points to the same distance of the center. It less used,
-                because even if it has better result from my point of view, you can't control the number of face. On the picture, the
-                left object is an Ico-sphere with 4 division, and on the right is a parametric sphere with phi = 40 and theta = 40.
+                Ensute, nous avons fais des object plus compliqué, commes des sphères. Nous avons commencé par faire des sphère paramétrique,
+                c'est la méthode la plus répendu puisqu'elle permet un contrôle plus poussée du nombre de faces de l'objet. La seconde, moins
+                utilisé est l'icosphère. Le but est à partir d'un octaèdre, subdiviser ses faces en quatre et normaliser les distances au centre
+                de la sphère de ces points. Cette méthode est moins utilisé, bien que je trouve le résultat meilleur, puisqu'elle ne permet pas
+                de controler le nombre de face. Sur l'image, la sphère de gauche est une icosphère d'ordre 4 et sur la droite une sphère paramétrique
+                avec phi = 40 et theta = 40.
               </p>
             </div>
           </div>
@@ -130,11 +129,11 @@
         <div class="row g-0 align-items-center">
           <div class="col-md-6">
             <div class="card-body">
-              <h2 class="card-title">Import objects and reflection</h2>
+              <h2 class="card-title">Importation d'objet et reflexion</h2>
               <p class="card-text">
-                This was one of the main features we had to make. The goal here was to import in our application an 3D object not generated
-                inside our application. We had only one restriction, we needed to use the <strong>.obj</strong> format. Then we made reflection,
-                to do so we simply put the ground a little bit translucid, and we render all the other object with the inverse modelMatrix.
+                C'est une des fonctionnalités principale que nous avions à faire. Le but était d'importer dans notre application un objet
+                3D non généré à l'intérieur de l'application. Nous n'avions qu'une contrainte, nous devions utilisé le format <strong>.obj</strong>.
+                Ensuite nous avons fait la reflexion, en mettant en tranparence le sol, et en affichant les objets avec la modelMatrix inversée.
               </p>
             </div>
           </div>
@@ -151,10 +150,10 @@
           </div>
           <div class="col-md-6">
             <div class="card-body">
-              <h2 class="card-title">Shaders Updates</h2>
+              <h2 class="card-title">Mise à jour des shaders</h2>
               <p class="card-text">
-                After thoses points, we were asked to have better shaders. We had to make Lambert and Phong shaders and we had to
-                make a system to switch shaders in the project (A container for shaders).
+                Après, nous devions améliorer les shaders. Nous devions écrire des shaders implémentant les méthode de Lambert
+                et Phong et nous devions faire un système pour changer de shader à la compilation (un containeur).
               </p>
             </div>
           </div>
@@ -167,10 +166,11 @@
             <div class="card-body">
               <h2 class="card-title">Textures</h2>
               <p class="card-text">
-                Then the last upgrade we had to make is adding texture to the phong shader, still with the switching system. That's the
-                last update we were asked to do. If you want to test this project, here's a link to download the apk.
+                La dernière amélioration à faire étaut d'utiliser des texture avec la méthode de Phong, tout en gardant le système de
+                changement de shader. C'est la dernière amélioration demandé. Si vous voulez tester cette application, voici un lien
+                pour télécharger l'apk.
                 <br/>
-                <a class="btn btn-primary" href="./../downloads/Algorithme3D.apk">Download</a> 13.8 Mo
+                <a class="btn btn-primary" href="../../downloads/Algorithme3D.apk">Télécharger</a> 13.8 Mo
               </p>
             </div>
           </div>
