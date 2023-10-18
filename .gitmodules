@@ -1,0 +1,3 @@
+[submodule "WebGL-Project"]
+	path = WebGL-Project
+	url = git@github.com:louisforestier/WebGL-Project.git
